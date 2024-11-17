@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Estática</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="inicio">
+      <h1>Bienvenidos a Mi Página</h1>
+      <p>
+        Esta es una página estática creada para la pre-entrega de desarrollo
+        Tech.
+      </p>
+    </section>
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="productos">
+        <div class="card">
+          <img src="images/product_1.jpg" alt="Producto 1" />
+          <h3>Producto 1</h3>
+          <p>Descripción del producto 1.</p>
+        </div>
+        <div class="card">
+          <img src="images/product_2.jpg" alt="Producto 2" />
+          <h3>Producto 2</h3>
+          <p>Descripción del producto 2.</p>
+        </div>
+        <div class="card">
+          <img src="images/product_3.jpg" alt="Producto 3" />
+          <h3>Producto 3</h3>
+          <p>Descripción del producto 3.</p>
+        </div>
+      </div>
+    </section>
+    <section id="reseñas">
+      <h2>Reseñas</h2>
+      <div class="reseñas-grid">
+        <div class="reseña">
+          <p>"Este es un excelente producto!" - Carlos A</p>
+        </div>
+        <div class="reseña">
+          <p>"Muy buena calidad y servicio." - Jesus B</p>
+        </div>
+        <div class="reseña">
+          <p>"Super comodos y con talles exactos" - Hector R</p>
+        </div>
+        <div class="reseña">
+          <p>"Muy buen producto" - Mariano L</p>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xkgnznla" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" required />
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="Email" name="Email" required />
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="Mensaje" name="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 Mi Página Estática. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
